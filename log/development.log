@@ -1943,3 +1943,22 @@ Processing by ListingsController#index as HTML
   Rendered layouts/_header.html.erb (0.1ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 83ms (Views: 78.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2017-08-31 13:42:40 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.2ms)[0m  SELECT "listings".* FROM "listings"
+  Rendered listings/index.html.erb within layouts/application (923.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1117ms (Views: 1066.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-08-31 13:42:42 +0300
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.2ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  Rendered listings/index.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 50ms (Views: 49.7ms | ActiveRecord: 0.2ms)
